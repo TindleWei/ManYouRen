@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="actionbar_purple">#ff7c529e</color>
+    <color name="actionbar_light_grey">#ffefefef</color>
+    <color name="text_dark87">#de000000</color>
+    <color name="text_dark54">#8a000000</color>
+    <color name="text_dark21">#4a000000</color>
+    <color name="text_light87">#deffffff</color>
+    <color name="text_light54">#8affffff</color>
+    <color name="text_white">#ffffffff</color>
+    <color name="background_white">#ffffffff</color>
+    <color name="background_grey">#77cccccc</color>
+    <color name="background_dark_grey">#909090</color>
+    <color name="background_purple">#ff7c529e</color>
+    <color name="background_purple_deep">#704b90</color>
+    <color name="background_light">#f5f5f5</color>
+    <color name="background_light_deep">#d6d6d6</color>
+    
+    <color name="font_1">#de000000</color>
+    <color name="font_2">#8a000000</color>
+    <color name="font_21">#4a000000</color>
+    <color name="font_3">#deffffff</color>
+    <color name="font_4">#8affffff</color>
+    
+    <color name="sa_purple">#9c27b0</color>
+    <color name="stacked_purple">#7b1fa2</color>
+    <color name="accent_purple">#ba68c8</color>
+    <color name="viber_purple">#ff7c529e</color>
+    
+    
+    
+    <!-- <color name="font_1">#404040</color>
+    <color name="font_2">#909090</color> -->
+    
+    <color name="md_purple">#ff7c529e</color>
+    <color name="md_purple_700">#ff7c529e</color>
+    <color name="md_grey">#9e9e9e</color>
+    
+    <color name="default_white">#ffffffff</color>
+    <color name="default_black">#ff141414</color>
+    <color name="default_blue">#ff3db8eb</color>
+    <color name="android_blue">#1fb6ed</color>
+    <color name="default_dark_grey">#ff333332</color>
+    <color name="default_light_grey">#ffefefef</color>
+    <color name="default_medium_grey">#ff555555</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="transparent">#00000000</color>
+    <color name="text_color">#ff434343</color>
+    <color name="text_blue">#ff0f81d9</color>
+    <color name="text_black">#ff000000</color>
+    <color name="menu_text">#ff555555</color>
+    <color name="calendar_blue">#2285c5</color>
+    <color name="link_onpress">#ffb7b7b7</color>
+    <color name="lightgray">#ffEEEEEE</color>
+    <color name="profile_avater_cover_selected">#7f000000</color>
+    <color name="profile_avater_cover_normal">#00000000</color>
+    <color name="profile_avater_bg">#7f000000</color>
+    <color name="round_corner_filter_green">#ff66ccff</color>
+    <color name="round_corner_filter_border">#ff000000</color>
+    <color name="text">#FCFCFC</color>
+    <color name="text_light">#999999</color>
+    <color name="text_inverted">#FFFFFF</color>
+    <color name="text_title">#DFDFDF</color>
+    <color name="pager_footer">#1fb6ed</color>
+    <color name="pager_selected_text">#FFFFFF</color>
+    <color name="pager_background">#F4F4F4</color>
+    <color name="pager_background_alternate">#E7E7E7</color>
+    <color name="text_link">#1fb6ed</color>
+    <color name="table_text">#484848</color>
+    <color name="table_text_inverted">#FFFFFF</color>
+    <color name="table_text_light">#A6A6A6</color>
+    <color name="table_text_header">#636363</color>
+    <color name="header_background_start">#ECECEC</color>
+    <color name="header_background_end">#C3C3C3</color>
+    <color name="header_background_top">#F9F9F9</color>
+    <color name="header_background_bottom">#A7A7A7</color>
+    <color name="actionbar_background_start">#272727</color>
+    <color name="actionbar_background_end">#1A1A1A</color>
+    <color name="bootstrap_divider_top">#000000</color>
+    <color name="bootstrap_divider_bottom">#5A5A5A</color>
+    <color name="main_background_start">#2E2E2E</color>
+    <color name="main_background_end">#2C2C2C</color>
+    <color name="button_background_enabled_start">#1fb6ed</color>
+    <color name="button_background_enabled_end">#1c9ac8</color>
+    <color name="button_background_pressed_start">#1e90ff</color>
+    <color name="button_background_pressed_end">#3db8eb</color>
+    <color name="edit_text_background_start">#EFF6FF</color>
+    <color name="edit_text_background_end">#FBFDFF</color>
+    <color name="button_background_disabled_start">#7b7b7b</color>
+    <color name="button_background_disabled_end">#646464</color>
+    <color name="text_shadow">#000000</color>
+    <color name="background_selected">#1fb6ed</color>
+    <color name="nav_button_text_light">#ffffff</color>
+    <color name="nav_button_pressed">#1fb6ed</color>
+    <color name="nav_button_disabled">#646464</color>
+    <color name="nav_button_text_disabled">#464646</color>
+    <color name="dark_grey">#1f1f1f</color>
+    <color name="navigation_drawer_item_separator">#c2c2c2</color>
+    <color name="item_card_pressed">#ebebeb</color>
+    <color name="item_card_pressed_header">#d6d6d6</color>
+
+    <!-- chat part -->
+    <color name="msg_status_sent">#ff339933</color>
+    <color name="msg_status_sending">#ff50a5c3</color>
+    <color name="msg_status_read">#ff82c85f</color>
+    <color name="msg_status_failed">#ffe64646</color>
+    <color name="msg_status_new">#fffff2cc</color>
+    <color name="msg_status_new_stroke">#ffff9b2f</color>
+    <color name="msg_status_new_text">#ffc0711b</color>
+    <color name="msg_editor_backgroud">#ffececec</color>
+    <color name="msg_photo_border">#ffd1d1d1</color>
+    <color name="msg_plus_item_press">#ff1d1d1d</color>
+    <color name="msg_emotebar_backgroud">#ff73797d</color>
+    <color name="msg_emotebar_item_press">#ff3b3e40</color>
+    <color name="msg_emotebar_item_selected">#ffececec</color>
+    <color name="msg_emote_divider">#ffa1a1a1</color>
+    <color name="msg_short_line_normal">#ffafafaf</color>
+    <color name="msg_short_line_selected">#ff5cbde3</color>
+    <color name="dialog_divider">#ffbfcbd3</color>
+    <color name="dialog_listitem_press">#ffd0dce4</color>
+    <color name="dialog_backgroud_full">#6d000000</color>
+    <color name="download_progressbar_bg">#4c000000</color>
+    <color name="bg_headerbar_spinner_normal">@color/transparent</color>
+    <color name="bg_headerbar_spinner_selected">#5f000000</color>
+    <color name="bg_headerbar_spinner_press">#7f000000</color>
+    <color name="light_notes_color">#ff999999</color>
+    <color name="dropbar_backgroud_color">#ffececec</color>
+    <color name="dropbar_text_color">#ff434343</color>
+    <color name="font_value">#ff888271</color>
+    <color name="timestampline">#ffe5e1de</color>
+
+    
+    <!--  LeanChat -->
+    <color name="light_green">#000</color>
+    <color name="blue">#72c0f2</color>
+    <color name="tranparent">#0000</color>
+    <color name="grey">#c0c0c0</color>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="tree_green">#5CB98D</color>
+    <color name="dark_tree_green">#428666</color>
+    <color name="my_pink">#F88084</color>
+    <color name="light_tree_green">#63C798</color>
+
+    <color name="beauty_blue">#51d7b6</color>
+
+    <color name="color_half_transparent">#b0000000</color>
+    <color name="color_transparent_bg">#80000000</color>
+    <color name="color_transparent_bg1">#e0000000</color>
+
+    <color name="color_bottom_text_normal">#9da0a4</color>
+    <color name="color_bottom_text_press">#4f9ef6</color>
+
+    <color name="common_blue">#2C97E8</color>
+    <color name="base_color_text_black">#3e3e39</color>
+
+    <color name="theme_bg_color">#f0f2f5</color>
+    <color name="base_color_text_white">#fff</color>
+
+    <color name="base_color_text_gray">#9fa0a0</color>
+
+
+    <color name="base_actionbar_bg">#f5f5f5</color>
+    <color name="base_action_bar_title_color">#2f2725</color>
+    <color name="base_tab_indicator_text_color">#f82c22</color>
+    <color name="base_menu_left_bg">#393c44</color>
+    <color name="pull_refresh_textview">#000000</color>
+    <color name="home_item_color_bg">#f4f6f6</color>
+    <color name="base_bg">#f4f6f6</color>
+    <!-- emot -->
+    <color name="color_bottom_bg">#272a2e</color>
+    <color name="text_gray">#969696</color>
+    <color name="msg_chat_bg">#eceff4</color>
+
+    <color name="color_theme">#489cfa</color>
+    <color name="c_f98800">#ed4e23</color>
+
+    <color name="dialog_color_title">#f82c22</color>
+    <color name="guide_color">#898989</color>
+
+    <color name="common_bg">#fcfcfc</color>
+    <color name="chatLeftText">#000</color>
+    <color name="red">#f00</color>
+    
+    <color name="highlight">#f3f3f3</color>
+    <color name="crop__button_bar">#f3f3f3</color>
+    <color name="crop__button_text">#666666</color>
+    <color name="crop__selector_pressed">#1a000000</color>
+    <color name="crop__selector_focused">#77000000</color>
+</resources>

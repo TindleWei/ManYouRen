@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <com.manyouren.manyouren.ui.chat.ChatListView
+                android:id="@+id/chat_clv_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/chat_layout_editor"
+                android:cacheColorHint="@color/transparent"
+                android:divider="#00000000"
+                android:dividerHeight="0dip"
+                android:fadingEdge="none"
+                android:listSelector="@drawable/list_selector_transition"
+                android:paddingLeft="4dip"
+                android:paddingRight="4dip"
+                android:scrollbars="none"
+                android:scrollingCache="false" />
+
+            <LinearLayout
+                android:id="@+id/chat_layout_editor"
+                android:layout_width="match_parent"
+                android:layout_height="52dip"
+                android:layout_above="@+id/chat_layout_emote"
+                android:background="#9fff"
+                android:orientation="vertical"
+                android:paddingBottom="2dp" >
+
+                <include layout="@layout/include_message_textditor" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/chat_layout_emote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" >
+
+                <com.manyouren.manyouren.ui.chat.EmoteInputView
+                    android:id="@+id/chat_eiv_inputview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <FrameLayout
+                    android:id="@+id/chat_layout_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@color/msg_editor_backgroud" >
+
+                    <include
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dip"
+                        android:layout_marginLeft="5dip"
+                        layout="@layout/message_plus"
+                        android:background="@color/msg_editor_backgroud" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/chat_layout_voice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom" >
+
+                    <include
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dip"
+                        android:layout_marginLeft="5dip"
+                        layout="@layout/include_message_audioditor"
+                        android:background="@color/msg_editor_backgroud" />
+                </FrameLayout>
+            </FrameLayout>
+
+            <include layout="@layout/include_fullscreen_mask" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_voice_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:text="0:00"
+        android:textColor="@color/md_purple"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_voice_tip"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/md_purple"
+        android:gravity="center"
+        android:text="松开取消"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

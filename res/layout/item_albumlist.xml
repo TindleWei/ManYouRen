@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:addStatesFromChildren="false"
+    android:background="@drawable/selector_square_grey"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:padding="8dp" >
+
+    <LinearLayout
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="4.0dip" >
+
+        <TextView
+            android:id="@+id/tv_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="2014"
+            android:textColor="@color/text_dark54"
+            android:textSize="15.0sp"
+            android:textStyle="bold"
+            android:visibility="visible" >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:padding="2dp"
+                android:singleLine="true"
+                android:text="七月"
+                android:textColor="@color/text_dark54"
+                android:textSize="13.0sp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/text_dark54" />
+
+            <TextView
+                android:id="@+id/tv_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:padding="2dp"
+                android:singleLine="true"
+                android:text="24日"
+                android:textColor="@color/text_dark54"
+                android:textSize="13.0sp" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp" >
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:maxLines="5"
+            android:text="一起去划船吧"
+            android:textColor="@color/text_dark87"
+            android:textSize="16sp" >
+        </TextView>
+        
+        <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical"
+                android:text="北京 颐和园"
+                android:textColor="@color/text_dark54"
+                android:textSize="14sp" />
+
+        <com.manyouren.manyouren.ui.user.ListItemGridView
+            android:id="@+id/picgrid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:horizontalSpacing="2dp"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp" >
+        </com.manyouren.manyouren.ui.user.ListItemGridView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="住宿"
+                android:textColor="@color/text_dark54"
+                android:textSize="14.0sp" />
+
+            <RatingBar
+                android:id="@+id/rb_rating"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:isIndicator="true"
+                android:maxHeight="14dp"
+                android:minWidth="14dp"
+                android:numStars="5"
+                android:rating="3.5" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

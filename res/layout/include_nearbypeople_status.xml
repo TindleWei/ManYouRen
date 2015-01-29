@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:id="@+id/iv_photo"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_nearby_food" />
+
+            <TextView
+                android:id="@+id/tv_tag"
+                style="@style/SubtitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_photo"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="美食 &amp;农家乐 "
+                android:textColor="@color/font_2"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:id="@+id/iv_photo2"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_nearby_photo" />
+
+            <TextView
+                android:id="@+id/tv_tag2"
+                style="@style/SubtitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_photo2"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="摄影&amp;拍照 "
+                android:textColor="@color/font_2"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:id="@+id/iv_photo3"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_nearby_wine" />
+
+            <TextView
+                android:id="@+id/tv_tag3"
+                style="@style/SubtitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_photo3"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="酒吧&amp;夜店 "
+                android:textColor="@color/font_2"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:id="@+id/iv_photo4"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_nearby_shop" />
+
+            <TextView
+                android:id="@+id/tv_tag4"
+                style="@style/SubtitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_photo4"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="咖啡&amp;茶 "
+                android:textColor="@color/font_2"
+                android:textSize="12dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:id="@+id/iv_photo5"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_nearby_music" />
+
+            <TextView
+                android:id="@+id/tv_tag5"
+                style="@style/SubtitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_photo5"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="电影&amp;音乐"
+                android:textColor="@color/font_2"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:id="@+id/iv_photo6"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_nearby_vacation" />
+
+            <TextView
+                android:id="@+id/tv_tag6"
+                style="@style/SubtitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_photo6"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="温泉&amp;度假 "
+                android:textColor="@color/font_2"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:id="@+id/iv_photo7"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_nearby_bike" />
+
+            <TextView
+                android:id="@+id/tv_tag7"
+                style="@style/SubtitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_photo7"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="自驾&amp;骑车 "
+                android:textColor="@color/font_2"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:id="@+id/iv_photo8"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_nearby_travel" />
+
+            <TextView
+                android:id="@+id/tv_tag8"
+                style="@style/SubtitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_photo8"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="旅行&amp;探险 "
+                android:textColor="@color/font_2"
+                android:textSize="12dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

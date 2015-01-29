@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <com.manyouren.manyouren.ui.FlippingImageView
+        android:id="@+id/loadingdialog_fiv_icon"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:src="@drawable/splash_spinner_outer" />
+
+    <TextView
+        android:id="@+id/loadingdialog_htv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="left|center"
+        android:textColor="@color/text_black"
+        android:textSize="14sp" />
+
+</LinearLayout>

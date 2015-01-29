@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:layout_marginTop="60dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_popwindow"
+        android:padding="20dip" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fadingEdge="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip"
+                    android:gravity="center_vertical"
+                    android:text="设置静音时段"
+                    android:textColor="@color/menu_text"
+                    android:textSize="16sp" />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2px"
+                    android:background="@color/text_blue"
+                    android:orientation="vertical" 
+                    android:layout_marginBottom="10dip"
+                    />
+                <LinearLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal" 
+					android:layout_marginBottom="10dip"
+	                >
+	                <TextView
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="静音时段"
+	                    android:textColor="@color/menu_text"
+	                    android:textSize="16sp" 
+	                    android:gravity="center_vertical"
+	                    />
+	                
+	                <TextView
+	                    android:id="@+id/tv_startendshow"
+	                    android:layout_width="0dp"
+	                    android:layout_height="wrap_content"
+	                    android:text="22:00-第二天8:00"
+	                    android:textColor="@color/menu_text"
+	                    android:textSize="16sp" 
+	                    android:layout_weight="1"
+	                    android:gravity="center"
+	                    />
+	            </LinearLayout>
+                <LinearLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal" 
+					 android:layout_marginBottom="5dip"
+	                >
+	                <TextView
+	                    android:layout_width="0dp"
+	                    android:layout_height="wrap_content"
+	                    android:text="开始时间"
+	                    android:textColor="@color/menu_text"
+	                    android:textSize="16sp" 
+	                    android:layout_weight="1"
+	                    android:gravity="center"
+	                    />
+	                <TextView
+	                    android:layout_width="0dp"
+	                    android:layout_height="wrap_content"
+	                    android:gravity="center"
+	                    android:text="结束时间"
+	                    android:textColor="@color/menu_text"
+	                    android:textSize="16sp" 
+	                    android:layout_weight="1"
+	                    />
+	            </LinearLayout>
+				<LinearLayout
+	                android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal" 
+
+	                >
+	                <kankan.wheel.widget.WheelView android:id="@+id/wv_starthour"
+			            android:layout_height="wrap_content"
+			            android:layout_width="0dp"
+			            android:layout_weight="1"
+			            />
+			        
+			        <kankan.wheel.widget.WheelView android:id="@+id/wv_endhour"
+			            android:layout_height="wrap_content"
+			            android:layout_width="0dp"
+			            android:layout_weight="1"
+			            />
+				</LinearLayout>
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2px"
+                    android:background="@color/text_blue"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="12.0dip"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/dialog_date_cancel"
+                        style="@style/Button_Dialog_Style"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_dialog_default"
+                        android:text="取消" />
+
+                    <Button
+                        android:id="@+id/dialog_date_submit"
+                        style="@style/Button_Dialog_Style"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_dialog_popsubmit"
+                        android:text="确认" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

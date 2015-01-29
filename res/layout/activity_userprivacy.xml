@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_grey"
+    android:orientation="vertical"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="75.0dip"
+            android:layout_height="75.0dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="false"
+            android:scaleType="fitXY"
+            android:src="@drawable/gravatar_icon" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="Name"
+            android:textColor="@color/text_dark54"
+            android:textSize="16.0sp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_square_grey" >
+
+            <TextView
+                android:id="@+id/set_name"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="屏蔽此人消息"
+                android:textColor="@color/text_dark54"
+                android:textSize="16.0sp" />
+
+            <com.manyouren.manyouren.widget.SlipButton
+                android:id="@+id/stop_switch_Btn"
+                android:layout_width="52dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp" />
+        </RelativeLayout>
+    
+        
+
+    </LinearLayout>
+
+</ScrollView>

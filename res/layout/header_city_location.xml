@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_square_grey"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/background_light_deep" />
+
+    <TextView
+        android:id="@+id/tv_city_location"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:enabled="false"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="正在定位城市..."
+        android:textColor="@color/text_dark87"
+        android:textSize="18sp" />
+
+</LinearLayout>

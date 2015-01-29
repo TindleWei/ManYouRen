@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="8dp"
+    android:background="@color/background_light"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.65dip"
+        android:background="@color/background_light_deep" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="16dp" >
+
+        <TextView
+            android:id="@+id/type_tv_for"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="目的"
+            android:textColor="@color/text_dark54" />
+
+        <TextView
+            android:id="@+id/type_tv_with"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="和谁"
+            android:textColor="@color/text_dark54" />
+
+        <TextView
+            android:id="@+id/type_tv_seek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="寻求"
+            android:textColor="@color/text_dark54" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp" >
+
+        <ImageView
+            android:id="@+id/type_for"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_planplus_g" />
+
+        <ImageView
+            android:id="@+id/type_with"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_planplus_b" />
+
+        <ImageView
+            android:id="@+id/type_seek"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_planplus_y" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_plantype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:visibility="gone" >
+
+        <com.manyouren.manyouren.ui.HorizontalListView
+            android:id="@+id/horizon_listview"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:descendantFocusability="blocksDescendants" >
+        </com.manyouren.manyouren.ui.HorizontalListView>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.65dip"
+        android:background="@color/background_light_deep" />
+
+</LinearLayout>

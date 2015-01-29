@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/echo_recorder_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9000"
+    android:visibility="gone" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center" >
+
+        <!-- 下面的是 录音模块 -->
+
+        <FrameLayout
+            android:id="@+id/recorder_layout"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/recorder_bg"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_audio_record_normal" />
+
+            <RelativeLayout
+                android:id="@+id/recorder_volume_layout"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/v2_voice_contain2"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/recorder_volume"
+                    android:layout_width="100dp"
+                    android:layout_height="0dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="24dp"
+                    android:background="#1e90ff" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/recorder_cover"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:src="@drawable/v2_voice_contain1"
+                android:visibility="visible" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/recorder_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recorder_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="上滑取消"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/recorder_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/recorder_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/bg_voice_time"
+            android:gravity="center"
+            android:text="0&apos;"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</FrameLayout>

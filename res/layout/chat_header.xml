@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header_reLayout"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/actionbar_bg"
+    android:clickable="true"
+     >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <LinearLayout
+        android:id="@+id/left_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:background="@drawable/transparent"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:paddingRight="10dp" >
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="20dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="4dp"
+            android:src="@drawable/abs__ic_ab_back_holo_light" />
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@id/iv_left"
+            android:src="@drawable/gravatar_icon" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/right_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/left_layout"
+        android:background="@drawable/transparent"
+        android:clickable="true"        
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/NormalText"
+            android:layout_marginTop="12dp"            
+            android:text="对方的名字"
+            android:textColor="@color/md_purple"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_place"
+            style="@style/NormalText"
+            android:layout_alignLeft="@id/tv_name"
+            android:layout_below="@id/tv_name"
+            android:layout_marginTop="4dp"
+            android:text="在西安  最近"
+            android:textColor="#a333"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

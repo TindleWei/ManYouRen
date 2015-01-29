@@ -1,0 +1,54 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+
+    <!-- Dummy content. -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp" >
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_head_circle"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/gravatar_icon" />
+
+        <EditText
+            android:id="@+id/et_name"
+            style="?android:textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/ic_blue_done"
+            android:drawablePadding="8dp"
+            android:gravity="bottom"
+            android:hint="填写昵称"
+            android:lineSpacingMultiplier="1.2"
+            android:maxLength="10"
+            android:paddingLeft="12dp"
+            android:textColorHint="@color/font_2" />
+
+        <TextView
+            style="?android:textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="bottom"
+            android:hint="使用好记的名字，让别人更快的找到你"
+            android:padding="8dp"
+            android:textColorHint="@color/font_2"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</ScrollView>

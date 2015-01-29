@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@drawable/actionbar_bg"
+    android:orientation="horizontal"
+    android:layout_marginBottom="1dp" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/NormalText"
+        android:layout_centerInParent="true"
+        android:textColor="@color/text_white"
+        android:text="个人"
+        android:textSize="19dp" />
+
+    <!-- <ImageView
+        android:id="@+id/iv_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/btn_filter"/>"
+
+    <ImageView
+        android:id="@+id/iv_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_add"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+         /> -->
+
+</RelativeLayout>

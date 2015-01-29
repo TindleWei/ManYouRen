@@ -1,0 +1,59 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <PreferenceCategory android:title="In-line">
+        <CheckBoxPreference
+            android:key="checkbox_preference"
+            android:summary="这是一个复选框"
+            android:title="复选框设置" />
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="Dialog-based">
+        <EditTextPreference
+            android:dialogTitle="Input anything"
+            android:key="editext_preference"
+            android:summary="dialog example"
+            android:title="input your favorite"/>
+       <!--  <ListPreference 
+            android:dialogTitle="seletec on item"
+            android:entries="@array/cities"
+            android:entryValue="@array/airport_codes"
+            android:key="list_preference"
+            android:summary="one dialog example"
+            android:title="select one item"/>  -->
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="Launch preferences">
+        <PreferenceScreen  
+                android:key="screen_preference"  
+                android:summary="展示另一个首选项配置页面"  
+                android:title="页面首选项" >   
+                <!-- 你可以在这里放置更多的首选项内容，将被在下一个页面呈现出来 -->  
+                <CheckBoxPreference  
+                    android:key="next_screen_checkbox_preference"  
+                    android:summary="在另一个页面展示但出于同一个层级的首选项配置"  
+                    android:title="复选框设置" />  
+            </PreferenceScreen>  
+            <PreferenceScreen  
+                android:summary="从一个意图中启动一个activity"  
+                android:title="意图首选项" >  
+                <intent  
+                    android:action="android.intent.action.VIEW"  
+                    android:data="http://www.baidu.com" />  
+            </PreferenceScreen> 
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="Preference attributes" >  
+            <CheckBoxPreference  
+                android:key="parent_checkbox_preference"  
+                android:summary="这是一个可见的父类"  
+                android:title="父类复选框首选项" />  
+            <!-- 子类的可见类型是由样式属性定义的 -->  
+            <CheckBoxPreference  
+                android:dependency="parent_checkbox_preference"  
+                android:key="child_checkbox_preference"  
+                android:layout="?android:attr/preferenceLayoutChild"  
+                android:summary="这是一个可见的子类"  
+                android:title="子类复选框首选项" />  
+        </PreferenceCategory> 
+ 
+</PreferenceScreen>

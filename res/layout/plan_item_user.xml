@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_user"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:background="@drawable/selector_square_grey"
+    android:clickable="true" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentTop="true"
+        android:background="@color/background_light_deep" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/background_light_deep" />
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        style="@style/AvatarCard"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/gravatar_icon" />
+
+    <View
+        android:id="@+id/divider_blank"
+        style="@style/ViewSeparator"
+        android:layout_centerVertical="true"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/NormalText"
+        android:layout_above="@id/divider_blank"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/iv_avatar"
+        android:textSize="16sp"
+        android:textColor="@color/text_dark54"
+        android:text="名字" />
+
+
+    <TextView
+        android:id="@+id/tv_age"
+        style="@style/NoteText"
+        android:layout_width="28dp"
+        android:layout_height="14dp"
+        android:layout_below="@id/tv_name"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/iv_avatar"
+        android:background="@drawable/ic_age_female_bg"
+        android:gravity="center"
+        android:text="24"
+        android:textSize="12sp"
+        android:textColor="@color/text_light87" />
+
+    <TextView
+        android:id="@+id/tv_from"
+        style="@style/SecondText"
+        android:layout_above="@id/divider_blank"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@id/tv_age"
+        android:layout_alignBottom="@id/tv_age"
+        android:layout_marginBottom="0dp"
+        android:text=" 来自北京"
+        android:textColor="@color/text_dark54"
+        android:textSize="12sp"
+        android:visibility="visible" />
+
+    <ImageView
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/ic_arrow_right" />
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:listViewAttr="http://schemas.android.com/apk/res/com.manyouren.manyouren"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/actionbar_bg"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/NormalText"
+            android:layout_centerInParent="true"
+            android:text="对话"
+            android:textColor="@color/text_white"
+            android:textSize="19dp" />
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_action_accept"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/refresh_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_title"
+        android:divider="@color/background_light_deep"
+        android:dividerHeight="1px"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:listSelector="#00000000"
+        android:scrollbars="none"
+        android:smoothScrollbar="true"
+        android:visibility="visible"
+        ptr:ptrDrawable="@drawable/ptr_logo"
+        ptr:ptrMode="both" />
+
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        style="@style/ListSpinner"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

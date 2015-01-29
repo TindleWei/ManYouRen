@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="refresh_list_attr">
+        <attr name="isDropDownStyle" format="boolean" />
+        <attr name="isOnBottomStyle" format="boolean" />
+        <attr name="isAutoLoadOnBottom" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="PullToRefresh">
+        <attr name="adapterViewBackground" format="reference|color" />
+        <attr name="headerBackground" format="reference|color" />
+        <attr name="mode">
+            <flag name="pullDownFromTop" value="0x1" />
+            <flag name="pullUpFromBottom" value="0x2" />
+            <flag name="both" value="0x3" />
+        </attr>
+    </declare-styleable>
+    
+    <declare-styleable name="PullScrollView">
+        <attr name="header" format="reference" />
+        <attr name="headerHeight" format="dimension" />
+        <attr name="headerVisibleHeight" format="dimension" />
+    </declare-styleable>
+    
+    <declare-styleable name="PlayBtn">
+        <attr name="left" format="boolean" />
+    </declare-styleable>
+    
+    <attr name="cropImageStyle" format="reference" />
+
+    <declare-styleable name="CropImageView">
+        <attr name="highlightColor" format="reference|color" />
+        <attr name="showThirds" format="boolean" />
+        <attr name="showHandles">
+          <enum name="changing" value="0" />
+          <enum name="always" value="1" />
+          <enum name="never" value="2" />
+        </attr>
+    </declare-styleable>
+
+</resources>

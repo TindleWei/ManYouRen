@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dip"
+    android:paddingLeft="40dip"
+    android:id="@+id/city_lay"
+    android:paddingRight="40dip"
+    android:background="@drawable/select_city_bg"
+    android:paddingTop="8dip" >
+
+    <TextView
+        android:id="@+id/city_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="城市名字"
+        android:textColor="#130c0e"
+        android:textSize="15sp" />
+<!-- 
+    <TextView
+        android:id="@+id/city_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/city_name"
+        android:text="城市大小"
+        android:textSize="15sp" /> -->
+
+    <!-- <TextView
+        android:id="@+id/city_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/city_name"
+        android:textSize="15sp" /> -->
+
+</RelativeLayout>

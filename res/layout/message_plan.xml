@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    android:gravity="left" >
+
+    <TextView
+        android:id="@+id/tv_plan_desti"
+        style="@style/SubtitleText"
+        android:text="目的地"
+        android:textColor="@color/default_dark_grey"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/tv_plan_desti"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_plan_for"
+            style="@style/ImagePlanIcon"
+            android:src="@drawable/icon_for_holiday" />
+
+        <ImageView
+            android:id="@+id/iv_plan_with"
+            style="@style/ImagePlanIcon"
+            android:src="@drawable/icon_with_one" />
+
+        <ImageView
+            android:id="@+id/iv_plan_seek"
+            style="@style/ImagePlanIcon"
+            android:src="@drawable/icon_seek_partner" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_plan_time"
+        style="@style/SubtitleText"
+        android:layout_below="@id/tv_plan_desti"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:text="9月1日出发   当日"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_plan_postscript"
+        style="@style/SubtitleText"
+        android:layout_below="@id/tv_plan_time"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:text="说明..."
+        android:textSize="12sp" />
+
+</RelativeLayout>

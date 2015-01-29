@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@drawable/actionbar_bg"
+    android:orientation="horizontal"
+    android:layout_marginBottom="1dp" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/NormalText"
+        android:layout_centerInParent="true"
+        android:textColor="@color/text_white"
+        android:text="计划"
+        android:maxLength="6"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:id="@+id/iv_filter"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:padding="8dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4dp"
+        android:src="@drawable/ic_action_filter"/>
+
+    <ImageView
+        android:id="@+id/iv_add"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_action_newplan"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="4dp"
+         />
+
+</RelativeLayout>

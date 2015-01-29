@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/actionbar_bg"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+        <TextView
+            android:id="@+id/tv_title_chat"
+            style="@style/NormalText"
+            android:layout_centerInParent="true"
+            android:text="消息"
+            android:textColor="@color/text_white"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/iv_add_ppl"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp"
+            android:padding="8dp"
+            android:visibility="gone"
+            android:src="@drawable/ic_action_addfriend" />
+    </RelativeLayout>
+
+    <com.manyouren.manyouren.widget.xlist.XListView
+        android:id="@+id/xListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_header"
+        android:divider="@color/background_light_deep"
+        android:dividerHeight="1px"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:scrollbars="none"
+        android:smoothScrollbar="true" >
+    </com.manyouren.manyouren.widget.xlist.XListView>
+
+    <com.manyouren.manyouren.widget.progress.VerticalProgressMsg
+        android:id="@+id/progressMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

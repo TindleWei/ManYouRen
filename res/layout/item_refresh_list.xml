@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:listViewAttr="http://schemas.android.com/apk/res/com.manyouren.manyouren"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa" >
+
+    <LinearLayout
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+    
+
+    <com.manyouren.manyouren.widget.RefreshListView
+        android:id="@+id/refresh_list"
+        android:layout_below="@id/header_title"
+        style="@style/ListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#0000"
+        android:drawSelectorOnTop="false"
+        android:visibility="gone"
+        android:scrollbars="none"
+        listViewAttr:isAutoLoadOnBottom="true"
+        listViewAttr:isDropDownStyle="true"
+        listViewAttr:isOnBottomStyle="true" />
+
+    <TextView
+        android:id="@android:id/empty"
+        style="@style/ListSubtitleText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        style="@style/ListSpinner"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

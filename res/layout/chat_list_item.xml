@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:background="@drawable/selector_square_grey" >
+
+    <!-- <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentTop="true"
+        android:background="@color/background_light_deep" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/background_light_deep" /> -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="72dp" />
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        style="@style/AvatarLarge"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/gravatar_icon" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@id/iv_avatar"
+        android:singleLine="true"
+        android:text="name"
+        android:textColor="@color/text_dark87"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_unread_number"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignTop="@id/tv_name"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@id/tv_name"
+        android:background="@drawable/chat_unread_num"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        style="@style/NoteText"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/tv_name"
+        android:paddingRight="15dp"
+        android:paddingTop="4dp"
+        android:text="date"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        style="@style/NoteText"
+        android:layout_alignLeft="@id/tv_name"
+        android:layout_below="@id/tv_name"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="content"
+        android:textSize="14sp" />
+
+</RelativeLayout>

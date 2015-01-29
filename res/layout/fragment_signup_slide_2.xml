@@ -1,0 +1,63 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none" >
+
+    <!-- Dummy content. -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp" >
+
+        <EditText
+            android:id="@+id/et_birthday"
+            style="?android:textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_blue_done"
+            android:drawablePadding="8dp"
+            android:editable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="bottom"
+            android:hint="填写生日"
+            android:lineSpacingMultiplier="1.2"
+            android:maxLength="10"
+            android:paddingLeft="12dp"
+            android:textColorHint="@color/font_2" />
+
+        <EditText
+            android:id="@+id/et_gender"
+            style="?android:textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:drawableLeft="@drawable/ic_blue_done"
+            android:drawablePadding="8dp"
+            android:editable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="bottom"
+            android:hint="填写性别"
+            android:lineSpacingMultiplier="1.2"
+            android:maxLength="10"
+            android:paddingLeft="12dp"
+            android:textColorHint="@color/font_2" />
+
+        <TextView
+            style="?android:textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="bottom"
+            android:hint="小心选哦，性别确定后将无法修改"
+            android:padding="8dp"
+            android:textColorHint="@color/font_2"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</ScrollView>

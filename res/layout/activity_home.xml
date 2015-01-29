@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_bottombar"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:paddingTop="4dp" >
+
+        <RadioGroup
+            android:id="@+id/main_tab_group"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingTop="2dp" >
+
+            <RadioButton
+                android:id="@+id/main_tab_plan"
+                android:layout_width="32dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:button="@null"
+                android:checked="true"
+                android:drawablePadding="2dp"
+                android:drawableTop="@drawable/ic_bar_plan"
+                android:gravity="center_horizontal"
+                android:text="游玩计划"
+                android:textColor="@color/text_light_selector"
+                android:textSize="12sp" />
+            
+            <RadioButton
+                android:id="@+id/main_tab_disc"
+                android:layout_width="32dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:button="@null"
+                android:drawablePadding="2dp"
+                android:drawableTop="@drawable/ic_bar_search"
+                android:gravity="center_horizontal"
+                android:text="漫游人"
+                android:textColor="@color/text_light_selector"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/main_tab_chat"
+                android:layout_width="32dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:button="@null"
+                android:drawablePadding="2dp"
+                android:drawableTop="@drawable/ic_bar_chat"
+                android:gravity="center_horizontal"
+                android:text="消息"
+                android:textColor="@color/text_light_selector"
+                android:textSize="12sp" />
+
+            
+
+            <RadioButton
+                android:id="@+id/main_tab_me"
+                android:layout_width="32dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:button="@null"
+                android:drawablePadding="2dp"
+                android:drawableTop="@drawable/ic_bar_user"
+                android:gravity="center_horizontal"
+                android:text="个人"
+                android:textColor="@color/text_light_selector"
+                android:textSize="12sp" />
+        </RadioGroup>
+    </LinearLayout>
+    
+</RelativeLayout>

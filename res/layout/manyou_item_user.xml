@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_user"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_margin="4dp"
+    android:background="@drawable/selector_item_bg"
+    android:clickable="true" >
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        style="@style/AvatarCard"
+        android:layout_margin="8dp"
+        android:src="@drawable/gravatar_icon" />
+
+    <View
+        android:id="@+id/divider_blank"
+        style="@style/ViewSeparator"
+        android:layout_centerVertical="true"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/NormalText"
+        android:layout_above="@id/divider_blank"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/iv_avatar"
+        android:text="名字" />
+
+    <TextView
+        android:id="@+id/tv_gender"
+        style="@style/NoteText"
+        android:layout_below="@id/tv_name"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/iv_avatar"
+        android:text="男" />
+
+    <TextView
+        android:id="@+id/tv_age"
+        style="@style/NoteText"
+        android:layout_alignBottom="@id/tv_gender"
+        android:layout_toRightOf="@id/tv_gender"
+        android:text="24岁" />
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_holo_right" />
+
+</RelativeLayout>

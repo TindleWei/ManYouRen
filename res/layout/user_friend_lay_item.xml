@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/user_friends_images"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/gravatar_image" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/user_friends_images"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/NormalText"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="纳兰性德" />
+
+            <TextView
+                android:id="@+id/tv_sex"
+                style="@style/NormalText"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="6dp"
+                android:background="@drawable/ic_city_female_bg"
+                android:gravity="center"
+                android:text="21"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_signText"
+            style="@style/NormalText"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="人生若只如初见" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="8dp"
+        android:background="@color/font_2" />
+
+</RelativeLayout>

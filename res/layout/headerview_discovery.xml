@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_marginBottom="1dp"
+    android:background="@drawable/actionbar_bg"
+    android:orientation="horizontal" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/NormalText"
+        android:layout_centerInParent="true"
+        android:text="漫游人"
+        android:textColor="@color/text_white"
+        android:textSize="18dp" />
+
+    <ImageView
+        android:id="@+id/iv_filter_status"
+        android:layout_width="56dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:padding="4dp"
+        android:src="@drawable/ic_new_filter" />
+
+    <ImageView
+        android:id="@+id/iv_add_status"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_new_edit" />
+
+</RelativeLayout>

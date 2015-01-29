@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_plan_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/actionbar_bg"
+            android:orientation="horizontal" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="48dp" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/NormalText"
+                android:layout_centerInParent="true"
+                android:maxLength="6"
+                android:text="游玩计划"
+                android:textColor="@color/text_white"
+                android:textSize="18dp" />
+
+            <ImageView
+                android:id="@+id/iv_filter"
+                android:layout_width="56dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:padding="4dp"
+                android:src="@drawable/ic_new_filter" />
+
+            <ImageView
+                android:id="@+id/iv_add"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:padding="8dp"
+                android:src="@drawable/ic_new_add" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/background_purple" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_new_search"
+                android:focusableInTouchMode="true" >
+
+                <ImageView
+                    android:id="@+id/iv_search_dropdown"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="4dp"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_search_dropdown_arrow"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_search_clear"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="4dp"
+                    android:padding="9dp"
+                    android:src="@drawable/ic_clear"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_search_icon"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/ic_search_plans"
+                    android:visibility="visible" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/autocomplete"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="36dp"
+                    android:layout_toRightOf="@id/iv_search_icon"
+                    android:background="@null"
+                    android:hint="输入目的城市/景点"
+                    android:imeOptions="actionSearch"
+                    android:singleLine="true"
+                    android:textColor="@color/text_dark54"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.manyouren.manyouren.widget.xlist.XListView
+        android:id="@+id/xListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_plan_header"
+        android:divider="@color/background_light_deep"
+        android:dividerHeight="1px"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:scrollbars="none"
+        android:smoothScrollbar="true" >
+    </com.manyouren.manyouren.widget.xlist.XListView>
+
+    <com.manyouren.manyouren.widget.progress.VerticalProgressMsg
+        android:id="@+id/progressMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_square_grey"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/scenic_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:text="陕西省历史博物馆"
+        android:textSize="16sp"
+        android:textColor="@color/text_dark87" />
+
+    <TextView
+        android:id="@+id/scenic_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="12sp"
+        android:hint="西安，雁塔区"
+        android:textColor="@color/text_dark54" />
+
+
+</LinearLayout>

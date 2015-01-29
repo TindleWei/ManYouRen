@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey" >
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/refresh_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/background_light_deep"
+        android:dividerHeight="1px"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:scrollbars="none"
+        android:smoothScrollbar="true"
+        android:visibility="visible"
+        ptr:ptrDrawable="@drawable/ptr_logo"
+        ptr:ptrMode="both" />
+
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        style="@style/ListSpinner"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/tv_errmsg"
+        style="@style/NormalText"
+        android:layout_centerInParent="true"
+        android:text="还没有照片呢"
+        android:visibility="gone" />
+
+</RelativeLayout>

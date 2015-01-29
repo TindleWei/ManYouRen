@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    >
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_gradient_white_nocorner"
+        android:padding="5dp"
+	    >
+	    <com.manyouren.manyouren.ui.user.ClearEditText
+	        android:id="@+id/filter_edit"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bg_searchbar"
+	        android:drawableLeft="@drawable/ic_action_search_b"
+	        android:hint="请输入关键字"
+	        android:singleLine="true"
+	        android:textSize="15.0dip" />
+	</LinearLayout>
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:paddingLeft="10dp"
+    	android:paddingRight="10dp"
+        >
+
+        <ListView
+            android:id="@+id/country_lvcountry"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:divider="@null" 
+            android:scrollbars="none"
+            />
+
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_toast_info"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="30.0dip"
+            android:visibility="invisible" />
+
+        <com.manyouren.manyouren.ui.user.SideBar
+            android:id="@+id/sidrbar"
+            android:layout_width="30.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center" />
+        
+        <ProgressBar
+	        android:id="@+id/pb_loading"
+	        style="@style/ListSpinner"
+	        android:layout_gravity="center"
+	        />
+        <TextView
+	        android:id="@+id/tv_errmsg"
+	        style="@style/NormalText"
+	        android:text="还没有好友呢"
+	        android:visibility="gone"
+	        android:layout_gravity="center"
+	         />
+    </FrameLayout>
+
+</LinearLayout>

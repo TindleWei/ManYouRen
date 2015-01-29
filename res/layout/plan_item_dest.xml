@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content" 
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/ic_plan_detail_address" />
+
+        <TextView
+            android:id="@+id/tv_destination"
+            style="@style/NormalText"
+            android:layout_marginLeft="16dp"
+            android:text="目的地"
+            android:textColor="@color/text_dark54"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_city"
+            style="@style/NormalText"
+            android:text=""
+            android:textColor="@color/text_dark54"
+            android:textSize="16sp" />
+</LinearLayout>

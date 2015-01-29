@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:visibility="gone"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="目的"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/menu_text"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/rg_for"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_for_1"
+            style="@style/RadioButtonLeft"
+            android:text="度假" />
+
+        <RadioButton
+            android:id="@+id/rb_for_2"
+            style="@style/RadioButtonCenter"
+            android:text="游玩" />
+
+        <RadioButton
+            android:id="@+id/rb_for_3"
+            style="@style/RadioButtonCenter"
+            android:text="出差" />
+
+        <RadioButton
+            android:id="@+id/rb_for_4"
+            style="@style/RadioButtonRight"
+            android:text="拼车" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="和谁"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/menu_text"
+        android:textSize="16sp" />
+    
+    <RadioGroup
+        android:id="@+id/rg_with"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_with_1"
+            style="@style/RadioButtonLeft"
+            android:text="自己" />
+
+        <RadioButton
+            android:id="@+id/rb_with_2"
+            style="@style/RadioButtonCenter"
+            android:text="朋友" />
+
+        <RadioButton
+            android:id="@+id/rb_with_3"
+            style="@style/RadioButtonCenter"
+            android:text="家人" />
+
+        <RadioButton
+            android:id="@+id/rb_with_4"
+            style="@style/RadioButtonRight"
+            android:text="情侣" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="寻求"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/menu_text"
+        android:textSize="16sp" />
+    
+    <RadioGroup
+        android:id="@+id/rg_seek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_seek_1"
+            style="@style/RadioButtonLeft"
+            android:text="伙伴" />
+
+        <RadioButton
+            android:id="@+id/rb_seek_2"
+            style="@style/RadioButtonRight"
+            android:text="建议" />
+
+    </RadioGroup>
+
+</LinearLayout>

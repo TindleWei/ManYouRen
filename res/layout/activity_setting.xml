@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_grey"
+    android:orientation="vertical"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="75.0dip"
+            android:layout_height="75.0dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="false"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="版本号 V1.0"
+            android:textColor="@color/text_dark54"
+            android:textSize="14.0sp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_square_grey" >
+
+            <TextView
+                android:id="@+id/set_name"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="接收推送消息"
+                android:textColor="@color/text_dark54"
+                android:textSize="16.0sp" />
+
+            <com.manyouren.manyouren.widget.SlipButton
+                android:id="@+id/push_switch_Btn"
+                android:layout_width="52dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_square_grey" >
+
+            <TextView
+                android:id="@+id/tv_privacy_hide"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="是否隐身"
+                android:textColor="@color/text_dark54"
+                android:textSize="16.0sp" />
+
+            <com.manyouren.manyouren.widget.SlipButton
+                android:id="@+id/hide_switch_Btn"
+                android:layout_width="51.33dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp" />
+        </RelativeLayout>
+        
+        <TextView
+            android:id="@+id/feedback_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_square_grey"
+            android:drawableRight="@drawable/abs__ic_right_holo_light"
+            android:gravity="center_vertical"
+            android:text="意见反馈"
+            android:paddingLeft="20dp"
+            android:paddingRight="16dp"
+            android:textColor="@color/text_dark54"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/checkVersion_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_square_grey"
+            android:drawableRight="@drawable/abs__ic_right_holo_light"
+            android:gravity="center_vertical"
+            android:text="检测新版本"
+            android:paddingLeft="20dp"
+            android:paddingRight="16dp"
+            android:textColor="@color/text_dark54"
+            android:textSize="16.0sp" />
+
+        <Button
+            android:id="@+id/btn_logout"
+            style="@style/ShadowText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_btn_purple"
+            android:gravity="center"
+            android:onClick="handleLogin"
+            android:padding="10dp"
+            android:text="退出登录"
+            android:textColor="@color/text"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal" >
+
+    <LinearLayout
+        android:id="@+id/head_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#fff"
+            android:paddingLeft="16dp"
+            android:paddingRight="8dp" >
+
+            <TextView
+                android:id="@+id/tv_status_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:text="当前状态:"
+                android:textColor="@color/text_dark54"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_user_define"
+                android:layout_width="56dp"
+                android:layout_height="28dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_purple_noborder"
+                android:text="自定义"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff" >
+
+            <EditText
+                android:id="@+id/et_change_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_toLeftOf="@+id/iv_done_status"
+                android:hint="自定义状态"
+                android:text=""
+                android:textColor="@color/text_dark54"
+                android:textColorHint="@color/text_dark54"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:visibility="gone"
+            android:background="@color/background_light_deep" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head_layout"
+        android:divider="@color/background_light_deep"
+        android:dividerHeight="0px"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:listSelector="#00000000"
+        android:scrollbars="none"
+        android:smoothScrollbar="true"
+        android:visibility="visible" >
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="52dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                xmlns:ptr="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:divider="@color/background_grey"
+                android:dividerHeight="1px"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="true"
+                android:headerDividersEnabled="true"
+                android:scrollbars="none"
+                android:smoothScrollbar="true"
+                android:visibility="visible"
+                ptr:ptrDrawable="@drawable/ptr_logo"
+                ptr:ptrMode="both" />	
+            <!-- ptr:ptrMode = pullFromStart; pullFromEnd; both; -->
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        style="@style/ListSpinner"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="52dp"
+        android:visibility="visible" />
+    
+    <TextView
+        android:id="@+id/tv_errmsg"
+        style="@style/NormalText"
+        android:layout_centerInParent="true"
+        android:text="暂无评论"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_inputlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <include layout="@layout/include_comment_send" />
+    </LinearLayout>
+
+</RelativeLayout>

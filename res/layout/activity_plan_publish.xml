@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.manyouren.manyouren.widget.ElasticScrollView
+        android:id="@+id/elastic_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_grey"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include layout="@layout/plan_item_search" />
+
+            <include layout="@layout/plan_item_publish_time" />
+
+            <TextView
+                style="@style/SubtitleText"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp"
+                android:text="发一张你的照片，让计划更加真实" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/more_iv1"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/btn_addphoto" />
+
+                <ImageView
+                    android:id="@+id/more_iv2"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/btn_addphoto"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/more_iv3"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/btn_addphoto"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <include layout="@layout/plan_item_publish_type" />
+
+            <include layout="@layout/plan_item_publish_add" />
+        </LinearLayout>
+    </com.manyouren.manyouren.widget.ElasticScrollView>
+
+    <Button
+        android:id="@+id/btn_more"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="32dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/ic_action_accept"
+        android:visibility="visible" />
+
+</RelativeLayout>

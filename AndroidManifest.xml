@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.manyouren.manyouren"
+    android:versionCode="4"
+    android:versionName="1.0.9" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <permission
+        android:name="com.manyouren.manyouren.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="com.manyouren.manyouren.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- Optional for location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <!-- GaoDeMap location -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name="com.manyouren.manyouren.RootApplication"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="b4bccafe51690044ba3e20bc0352c9da" />
+
+        <!-- 此为友盟统计配置 -->
+        <activity
+            android:name="com.umeng.fb.ConversationActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.umeng.fb.ContactActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="541ed595fd98c518a805465a" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="officalWebsite" />
+
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" >
+        </service>
+
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.manyouren.manyouren.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:logo="@drawable/logo"
+            android:screenOrientation="portrait"
+            android:theme="@style/theme.startPage"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.manyouren.manyouren.HomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.usernew.AccountLoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.usernew.AccountSignupActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomTheme"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.NewsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.UserActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.plan.PlanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.plan.PlanPublishActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.plan.PlanTimesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.plan.GalleryUrlActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.plan.GalleryFileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.plan.ScenicsListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.user.ImageViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.user.UserHeadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.chat.ChatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.user.CityListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.ImageFactoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.user.UserActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.user.FriendListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.user.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.user.UserPlansActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.user.UserPlanCommentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.discovery.old.PeopleNearbyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.discovery.old.BeautyPlaceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.user.AlbumListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.user.AlbumAddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.usernew.UserPhotosActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.usernew.UserPhotoPublishActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.user.UserSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.user.PoiListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.discovery.old.ManYouListActivityiscovery"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.user.UserAddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.discovery.NearbyStatusActivityFragment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.discovery.QuanCommentActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.manyouren.manyouren.service.location.LocationSourceActivity" />
+        <activity android:name="com.manyouren.manyouren.service.location.LocationNetworkActivity" />
+        <activity android:name="com.manyouren.manyouren.service.location.RouteActivity" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.user.FriendsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/StyledIndicators" >
+        </activity>
+        <activity
+            android:name="com.manyouren.manyouren.ui.user.UserInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.user.UserInfoEditActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.plan.PlanCommentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.user.InfoEditActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomTheme" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.user.GuideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.plan.SelectCityActivity"
+            android:screenOrientation="portrait" />
+        
+
+        <!-- AVOS Push Part -->
+
+        <service android:name="com.avos.avoscloud.PushService" />
+
+        <receiver android:name="com.avos.avoscloud.AVBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- LeanChat -->
+        <receiver android:name="com.manyouren.manyouren.ui.chatnew.service.MsgReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="com.avoscloud.session.action" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.manyouren.manyouren.ui.chatnew.service.GroupMsgReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="com.avoscloud.group.action" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.manyouren.manyouren.ui.chatnew.ui.activity.ChatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.chatnew.ui.activity.UpdateContentActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.manyouren.manyouren.ui.chatnew.ui.activity.ImageBrowerActivity" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.chatnew.ui.activity.LocationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.chatnew.ui.activity.NewFriendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.chatnew.ui.activity.AddFriendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.chatnew.ui.activity.NotifyPrefActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.chatnew.ui.activity.UserPrivacyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.chatnew.ui.activity.GroupListActivity"
+            android:label="@string/group"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.chatnew.ui.activity.GroupDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.chatnew.ui.activity.GroupAddMembersActivity"
+            android:label="@string/inviteMembers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.ui.chatnew.ui.activity.GroupAddDialog"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.manyouren.manyouren.YinDaoActivity"
+            android:label="@string/title_activity_yin_dao"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+        <activity android:name="com.manyouren.manyouren.widget.crop.CropImageActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

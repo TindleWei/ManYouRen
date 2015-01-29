@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginTop="8dp"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/SubtitleText"
+        android:layout_marginLeft="12dp"
+        android:text="时间" />
+
+    <Button
+        android:id="@+id/btn_start_date"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/background_light"
+        android:gravity="left|center_vertical"
+        android:hint="@string/inputdate"
+        android:textSize="16sp"
+        android:textColor="@color/text_dark54"
+        android:paddingLeft="16dp" />
+
+</LinearLayout>

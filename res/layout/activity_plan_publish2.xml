@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.manyouren.manyouren.widget.ElasticScrollView
+        android:id="@+id/elastic_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_grey"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/layout_desti"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:background="@drawable/selector_square_grey" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.65dip"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/background_light_deep" />
+
+                <ImageView
+                    android:id="@+id/tip_iv1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/ic_plan_detail_address" />
+
+                <TextView
+                    android:id="@+id/tv_desti"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_toRightOf="@id/tip_iv1"
+                    android:background="@null"
+                    android:hint="输入目的城市/景点"
+                    android:imeOptions="actionSearch"
+                    android:singleLine="true"
+                    android:textColor="@color/text_dark87"
+                    android:textColorHint="@color/text_dark54"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/ic_arrow_right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_date"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:clickable="true"
+                android:background="@drawable/selector_square_grey" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.65dip"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/background_light_deep" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.65dip"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/background_light_deep" />
+
+                <ImageView
+                    android:id="@+id/tip_iv2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/ic_plan_detail_date" />
+
+                <TextView
+                    android:id="@+id/tv_start_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tip_iv2"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@+id/tip_iv2"
+                    android:gravity="left|center_vertical"
+                    android:hint="@string/inputdate"
+                    android:textColor="@color/text_dark87"
+                    android:textColorHint="@color/text_dark54"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <include layout="@layout/plan_item_publish_type" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@color/background_light" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.65dip"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/background_light_deep" />
+
+                <ImageView
+                    android:id="@+id/tip_iv3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_plan_detail_text" />
+
+                <EditText
+                    android:id="@+id/et_postscript"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/tip_iv3"
+                    android:background="@color/background_light"
+                    android:gravity="top"
+                    android:hint="文字说明..."
+                    android:maxLength="150"
+                    android:minHeight="6dp"
+                    android:textColor="@color/text_dark54"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_text_length"
+                    style="@style/SubtitleText"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/et_postscript"
+                    android:layout_marginRight="16dp"
+                    android:paddingBottom="4dp"
+                    android:text="0/150字"
+                    android:textColor="@color/text_dark54" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_text_length"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="8dp"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/more_iv1"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/btn_addphoto_p" />
+
+                    <ImageView
+                        android:id="@+id/more_iv2"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/btn_addphoto_p"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/more_iv3"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/btn_addphoto_p"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.65dip"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/background_light_deep" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_startcity"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:background="@drawable/selector_square_grey" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.65dip"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/background_light_deep" />
+                
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.65dip"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/background_light_deep" />
+                
+                <ImageView
+                    android:id="@+id/tip_iv4"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_plan_item_location" />
+
+                <TextView
+                    android:id="@+id/tv_start_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tip_iv4"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_centerVertical="true"
+                    android:hint="出发城市"
+                    android:textColor="@color/text_dark54"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.manyouren.manyouren.widget.ElasticScrollView>
+
+</RelativeLayout>

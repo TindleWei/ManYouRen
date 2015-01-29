@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:addStatesFromChildren="false"
+    android:background="@drawable/selector_square_grey"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="8dp" >
+
+    <LinearLayout
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/manyoulist_item_photo_image"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/gravatar_icon" />
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="初见"
+            android:textColor="@color/text_dark54"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:maxLines="5"
+            android:text="一起去划船吧"
+            android:textColor="@color/text_dark54"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="6dp"
+            android:gravity="center_vertical"
+            android:text="地点   北京 颐和园"
+            android:textColor="@color/text_dark54"
+            android:textSize="14.0sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="住宿  "
+                android:textColor="@color/text_dark54"
+                android:textSize="14.0sp" />
+
+            <RatingBar
+                android:id="@+id/rb_rating"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:isIndicator="true"
+                android:maxHeight="14dp"
+                android:minWidth="14dp"
+                android:numStars="5"
+                android:rating="3.5" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_pubtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:lines="1"
+            android:text="1小时前"
+            android:textColor="@color/text_dark54"
+            android:textSize="12sp" >
+        </TextView>
+
+        <com.manyouren.manyouren.ui.user.ListItemGridView
+            android:id="@+id/lig_picgrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:horizontalSpacing="2dp"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp" >
+        </com.manyouren.manyouren.ui.user.ListItemGridView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chatTextLayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/chatBottomHeight"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/chatBottomRightLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/sendBtn"
+            android:layout_width="46dp"
+            android:layout_height="32dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_purple_noborder"
+            android:gravity="center"
+            android:text="发送"
+            android:textSize="16sp"
+            android:textColor="#fff"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/turnToAudioBtn"
+            android:layout_width="46dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/chatBottomBtnMargin"
+            android:background="@drawable/ic_new_voice"
+            android:textColor="@color/base_color_text_black"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <com.manyouren.manyouren.ui.chatnew.ui.view.EmotionEditText
+        android:id="@+id/textEdit"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="32dp"
+        android:layout_marginRight="6dp"
+        android:layout_toLeftOf="@id/chatBottomRightLayout"
+        android:background="@drawable/bg_new_chat_bottom"
+        android:singleLine="true"
+        android:textColor="@color/text_dark54"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/showEmotionBtn"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignRight="@id/textEdit"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/btn_chat_emo_selector" />
+
+</RelativeLayout>

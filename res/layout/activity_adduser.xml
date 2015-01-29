@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp" >
+        
+        <Button
+        android:id="@+id/user_search"
+        android:layout_alignParentRight="true"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/selector_item_bg"
+        android:text="搜索" />
+        <EditText
+            
+        android:id="@+id/user_number"
+        android:layout_toLeftOf="@id/user_search"
+        android:layout_alignBottom="@id/user_search"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:hint="漫游号/邮箱"
+        android:drawableLeft="@drawable/ic_holo_search"
+        android:drawablePadding="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    
+    </RelativeLayout>
+
+    
+
+</LinearLayout>

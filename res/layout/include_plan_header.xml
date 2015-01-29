@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_plan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/selector_square_grey"
+        android:orientation="vertical" >
+
+        <include layout="@layout/plan_item_dest" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="52dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/bg_divider" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/ic_plan_detail_date" />
+
+            <TextView
+                android:id="@+id/tv_startdate"
+                style="@style/SubtitleText"
+                android:layout_marginLeft="16dp"
+                android:singleLine="true"
+                android:text="9.01"
+                android:textColor="@color/text_dark54"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="52dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/bg_divider" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/ic_plan_detail_purpose" />
+
+            <ImageView
+                android:id="@+id/iv_plan_for"
+                style="@style/ImagePlanIconMedium"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/icon_for_holiday" />
+
+            <ImageView
+                android:id="@+id/iv_plan_with"
+                style="@style/ImagePlanIconMedium"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/icon_with_one" />
+
+            <ImageView
+                android:id="@+id/iv_plan_seek"
+                style="@style/ImagePlanIconMedium"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/icon_seek_partner" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="52dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/bg_divider" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/ic_plan_detail_text" />
+
+            <TextView
+                android:id="@+id/tv_postscript"
+                style="@style/SubtitleText"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="2dp"
+                android:singleLine="false"
+                android:text="我在XX准备去XX,有没有XX可以和我一起去的..."
+                android:textColor="@color/text_dark21"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <include layout="@layout/plan_item_photo" />
+
+        <TextView
+            android:id="@+id/tv_createtime"
+            style="@style/SubtitleText"
+            android:layout_gravity="right"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="4dp"
+            android:singleLine="true"
+            android:text="发布于3小时前"
+            android:textColor="@color/text_dark21"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

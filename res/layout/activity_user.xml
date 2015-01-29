@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey"
+    android:orientation="vertical" >
+
+    <com.manyouren.manyouren.widget.ElasticScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_send_msg"
+        android:descendantFocusability="blocksDescendants"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@drawable/wallpaper_jinmen" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/iv_avatar"
+                        style="@style/AvatarCircle"
+                        android:src="@drawable/gravatar_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        style="@style/NormalText"
+                        android:layout_marginTop="4dp"
+                        android:text="张三丰"
+                        android:textColor="@color/text_light87" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_sex"
+                            style="@style/NormalText"
+                            android:layout_width="36dp"
+                            android:layout_height="18dp"
+                            android:background="@drawable/ic_city_female_bg"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/text_light87"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tv_city"
+                            style="@style/NormalText"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="4dp"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="@color/text_light87"
+                            android:textSize="14sp"
+                            android:visibility="visible" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/user_info_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:clickable="true"
+                android:background="@drawable/selector_square_white"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" >
+                
+                <TextView
+                    style="@style/SubtitleText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="基本资料"
+                    android:textColor="@color/font_2"
+                    android:textSize="16sp" />
+
+                <include layout="@layout/activity_user_inf" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/user_plan_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:background="@drawable/selector_square_white"
+                
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp" >
+
+                <TextView
+                    android:id="@+id/tv_plan_title"
+                    style="@style/SubtitleText"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="计划"
+                    android:textColor="@color/font_2"
+                    android:textSize="16sp" />
+
+                <include layout="@layout/include_user_plans" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/user_album_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:clickable="true"
+                android:background="@drawable/selector_square_white"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp" >
+
+                <TextView
+                    android:id="@+id/tv_album_title"
+                    style="@style/SubtitleText"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:text="相册"
+                    android:textColor="@color/font_2"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp" >
+
+                    <include layout="@layout/activity_user_images" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.manyouren.manyouren.widget.ElasticScrollView>
+
+    <Button
+        android:id="@+id/btn_send_msg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selector_btn_purple"
+        android:text="发消息"
+        android:textColor="@color/text_light87"
+        android:textSize="20sp" />
+
+</RelativeLayout>

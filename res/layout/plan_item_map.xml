@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_plan_map"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:layout_marginTop="2dp"
+    android:background="@drawable/selector_square_grey"
+    android:clickable="true"
+    android:visibility="visible" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentTop="true"
+        android:background="@color/background_light_deep" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/background_light_deep" />
+
+    <ImageView
+        android:id="@+id/id_loc"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/ic_plan_item_location" />
+
+    <TextView
+        android:id="@+id/tv_loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/id_loc"
+        android:text="目的地位置"
+        android:textColor="@color/text_dark21"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/ic_arrow_right" />
+
+</RelativeLayout>

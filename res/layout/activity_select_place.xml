@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_grey"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_light"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true" >
+
+        <AutoCompleteTextView
+            android:id="@+id/autocomplete"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/ic_action_search_b"
+            android:hint="输入目的城市/景点"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:textColor="@color/text_dark54"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/ib_search_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/ic_clear"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_city"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:clickable="true"
+        android:visibility="gone"
+        android:background="@drawable/selector_square_grey" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:background="@color/background_light_deep" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/background_light_deep" />
+
+        <TextView
+            android:id="@+id/et_city"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:text="西安"
+            android:textColor="@color/text_dark87"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+
+    <ListView
+        android:id="@+id/et_scenics"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/background_light_deep"
+        android:dividerHeight="1px"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:scrollbars="none"
+        android:smoothScrollbar="true" >
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_square_grey"
+    android:padding="0dp" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="90dp" />
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        style="@style/AvatarLarge"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/gravatar_icon" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/iv_avatar" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="4dp"
+            android:singleLine="true"
+            android:text="用户昵称"
+            android:textColor="@color/table_text_selector"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_distance"
+            style="@style/NoteText"
+            android:layout_alignBottom="@id/tv_name"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:text="500m"
+            android:textColor="@color/text_dark21"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_age"
+            android:layout_alignLeft="@id/tv_name"
+            android:layout_below="@id/tv_name"
+            android:layout_marginTop="4dp"
+            android:layout_width="32dp"
+            android:layout_height="16dp"
+            android:background="@drawable/ic_age_female_bg"
+            android:gravity="center_horizontal"
+            android:text="21"
+            android:textColor="@color/text_light87"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/iv_gender"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignLeft="@id/tv_name"
+            android:layout_below="@id/tv_name"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:src="@drawable/ic_sex_female" />
+
+        <TextView
+            style="@style/NoteText"
+            android:layout_marginLeft="6dp"
+            android:layout_alignBottom="@id/tv_age"
+            android:layout_toRightOf="@id/tv_age"
+            android:layout_marginTop="2dp"
+            android:text="西安人"
+            android:visibility="gone"
+            android:textColor="@color/text_dark21"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            style="@style/NoteText"
+            android:layout_alignLeft="@id/tv_age"
+            android:layout_below="@id/tv_age"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="4dp"
+            android:singleLine="true"
+            android:text="状态"
+            android:textColor="@color/text_dark54"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

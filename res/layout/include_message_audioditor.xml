@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_speaker_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#9fff"
+    android:gravity="center_horizontal"
+    android:paddingBottom="20dp"
+    android:orientation="vertical"
+    android:visibility="gone" >
+    
+
+
+    <ImageView
+        android:id="@+id/chat_audiobtn"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:focusable="false"
+        android:src="@drawable/btn_speaker_bg" />
+
+</LinearLayout>
